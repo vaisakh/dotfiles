@@ -35,7 +35,13 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Quramy/tsuquyomi' 
 Plugin 'rizzatti/dash.vim'
 Plugin 'scrooloose/nerdcommenter'
-
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'tpope/vim-surround'
 " Themes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -46,6 +52,16 @@ Plugin 'crusoexia/vim-monokai'
 Plugin 'pangloss/vim-javascript'
 Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+
+" Html
+Plugin 'othree/html5.vim'
+
+" Css
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'cakebaker/scss-syntax.vim'
+
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -87,6 +103,10 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+" Folding methods
+set foldmethod=indent
+set foldlevel=1
+set foldclose=all
 
 """""""""""""""""""""""""""""""""""""""""
 " Mapping configuration
