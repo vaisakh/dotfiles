@@ -42,6 +42,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'tpope/vim-surround'
+Plugin 'prettier/vim-prettier'
 " Themes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
