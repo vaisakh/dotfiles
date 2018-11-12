@@ -92,6 +92,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias backend="cd ~/Code/vp/api"
+alias frontend="cd ~/Code/vp/app"
+alias brun="cd ~/Code/vp/api/vp/E:/vp/build"
+alias bbuild="cd ~/Code/vp/api/vp"
+
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
 
