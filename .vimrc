@@ -32,7 +32,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'Quramy/tsuquyomi' 
+Plugin 'Quramy/tsuquyomi'
 Plugin 'rizzatti/dash.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -48,6 +48,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'crusoexia/vim-monokai'
+Plugin 'morhetz/gruvbox'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
@@ -88,7 +89,7 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""
 
 " Theme
-colorscheme monokai 
+colorscheme gruvbox
 
 " Highlight current line
 set cursorline
@@ -99,8 +100,8 @@ set ruler
 
 " Set Tabs
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
 
@@ -120,6 +121,7 @@ let g:notes_suffix = '.md'
 
 " NERDTree
 let NERDTreeQuitOnOpen = 1
+let NERDTreeWinSize = 60
 nnoremap <Leader>f :NERDTreeToggle  \| :NERDTreeFocus<cr>
 nmap <Leader>bi :source ~/.vimrc<cr>:PluginInstall<cr>
 nmap <F8> :TagbarToggle<CR>
@@ -128,7 +130,7 @@ map <Leader>eb :e ~/code/vp/api/
 map <Leader>ef :e ~/code/vp/app/
 map <Leader>cu :Tabularize /\|<CR>
 
-"Goto file new split windo 
+"Goto file new split windo
 nnoremap gf <C-W>f
 vnoremap gf <C-W>f
 " Change between split windows
