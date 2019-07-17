@@ -51,11 +51,13 @@ Plugin 'crusoexia/vim-monokai'
 Plugin 'morhetz/gruvbox'
 
 " Javascript
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript' #replace with vim-polyglot
+Plugin 'sheerun/vim-polyglot'
 Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'w0rp/ale'
 
 " Html
 Plugin 'othree/html5.vim'
@@ -89,7 +91,7 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""
 
 " Theme
-colorscheme gruvbox
+colorscheme monokai
 
 " Highlight current line
 set cursorline
@@ -149,3 +151,13 @@ nnoremap ,p :bp<CR>
 nnoremap ,x :bd<CR>
 " remap ESC key
 " inoremap jj <ESC>
+" ALE Configuration
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+let g:ale_linters = {
+    \ 'javascript': ['eslint']
+    \ }
+let g:ale_javascript_eslint_executable='/usr/local/bin/eslint'
